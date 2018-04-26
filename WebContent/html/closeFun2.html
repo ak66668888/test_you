@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>   
+/* window.onbeforeunload=onclose;
+function onclose()
+{
+if(event.clientX>document.body.clientWidth&&event.clientY<0||event.altKey)
+{
+return "您要离开吗？";
+}
+} */
+window.onbeforeunload = onbeforeunload_handler;//关闭
+window.onunload = onunload_handler;//刷新
+function onbeforeunload_handler(){
+  var warning="确认退出?";
+  alert(warning);
+  return warning;
+}
+function onunload_handler(){
+  var warning="谢谢光临";
+  alert(warning);
+}
+</script>  
+</head>
+<body>
+<a>浏览器关闭弹出功能测试2</a>
+</body>
+</html>

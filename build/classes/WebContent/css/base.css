@@ -1,0 +1,35 @@
+﻿body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr { margin:0; padding:0;}
+html { -webkit-text-size-adjust: none;}
+html,body { font-size: 12px; font-family: "microsoft yahei", arial;}
+ul,ol,li { list-style:none;}
+fieldset,img { border:0}
+.clearfix:after { content: "."; display: block; height: 0; font-size: 0; line-height: 0; clear: both; visibility: hidden; }
+.clearfix::after { content: "."; display: block; height: 0; font-size: 0; line-height: 0; clear: both; visibility: hidden; }
+.clearfix { /*overflow:hidden;*/ zoom:1; *zoom:1; _zoom:1;}
+.clearit { clear:both; display: block; font-size:0; height:0; line-height: 0; overflow:hidden;}
+a { text-decoration:none; -webkit-tap-highlight-color: transparent;}
+.left{ float:left;}
+.right{ float:right;}
+.pos-rel { position: relative;}
+.pos-abs { position: absolute;}
+.pos-fix { position: fixed;}
+.vis-hide { visibility: hidden;}
+.d-n { display: none!important; }
+.d-b { display: block!important;}
+.d-inb { display: inline-block!important;}
+em { font-style:normal;}
+i { font-style:normal;}
+/*去除Chrome等浏览器文本框默认发光边框*/
+input:focus, textarea:focus { outline: none; }
+
+* { -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.mid {
+	margin: 0 auto;
+	width: 1000px;
+}
+@media only screen and (min-width:1228px) {
+	.mid {
+		width: 1200px;
+	}
+}
+

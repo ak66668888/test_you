@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/common/utils/jquery-1.11.3.min.js"
+	type="text/javascript" charset="utf-8"></script>
+<script src="../js/common/utils/template.js" type="text/javascript"
+	charset="utf-8"></script>
+<script src="../js/common/echart/echarts.min.js" type="text/javascript"
+	charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="../css/base.css" />	
+	
+<script>
+$(document).ready(function(){
+	  $('ul li:eq(0)').after("<li>2 after</li>"); //放在<li>1</li>之后
+	  $('ul').append("<li>6 append</li>"); //放在元素里，ul之后
+	});
+$(function($) {
+	  // 你可以在这里继续使用$作为别名...
+		$('ul li').eq(3).before("<li>4 before</li>"); //放在<li>5</li>之前
+		$('ul').prepend("<li>0 prepend</li>"); //放在元素里，ul之前
+	});
+function checkLeave(){   
+　event.returnValue="确定离开当前页面1吗？";   
+}   
+</script>
+<style type="text/css">
+li {color: blue}
+</style>  
+</head>
+<body onbeforeunload="checkLeave()">
+<br/>
+<a style="font-size: 14px;color: red;">浏览器关闭弹出功能测试</a>
+<br></br>
+
+<!-- margin、padding:10px 5px 15px 20px;   意思是上、右、下、左边距:10px 5px 15px 20px -->
+<!-- margin、padding:10px 20px;   意思是上下边距:10px、右左边距:20px -->
+<ul style="margin: 5px 2px; padding: 10px 20px;">
+	<li>1</li>
+	<li>3</li>
+	<li>5</li>
+</ul>
+</body>
+</html>
